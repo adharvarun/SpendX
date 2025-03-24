@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SpendX</h1>
+        </header>
+        <main>
+            <div class="financial-summary">
+                <div class="income-expense-box income">
+                    <h2 class="income-head">Total Income</h2>
+                    <div id="totalIncome">$0</div>
+                </div>
+                <div class="income-expense-box expense">
+                    <h2 class="expense-head">Total Expense</h2>
+                    <div id="totalExpense">$0</div>
+                </div>
+            </div>
+            <div class="balance">
+                <h2>Net Balance</h2>
+                <div id="netBalance">$0</div>
+            </div>
+            <div class="form">
+                <input type="text" id="description" placeholder="Description" />
+                <input type="number" id="amount" placeholder="Amount" />
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button id="addTransactionBtn">Add Transaction</button>
+            </div>
+            <div class="history">
+                <h2 class="history-head">Transaction History</h2>
+                <ul id="transactionList"></ul>
+            </div>
+        </main>
+        <a href="https://github.com/adharvarun" class="page">@adharvarun</a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
